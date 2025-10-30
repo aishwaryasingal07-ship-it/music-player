@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                <i class="fa-solid fa-bars"></i> 
+                </div>
+            </nav>
+            <img src="images.jpeg" class="songimg">
+            <h2> GUZAARA</h2>
+            <p>  Song By Josh Brar, Paramapara Tandon..</p>
+            <audio  id="song">
+                <source src="guzaara baaghi 4 128 kbps.mp3" type="audio/mp3">
+            </audio>
+            <input type="range"  valur="0"  id="progress">
+
+            <div class="controls">
+                <div> <i class="fa-solid fa-backward"></i></div>
+                <div onclick ="playPause ()"><i class="fa-solid fa-play" id="ctrlicon"></i> </div> 
+                <div><i class="fa-solid fa-forward"></i> </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
